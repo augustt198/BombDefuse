@@ -1,0 +1,10 @@
+# IntelliJ
+.idea
+*.iml
+
+*.jar
+*.class
+bin
+
+# Maven
+target

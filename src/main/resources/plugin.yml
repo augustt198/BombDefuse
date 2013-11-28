@@ -1,0 +1,5 @@
+main: main.java.im.prox.bombdefuse.BombDefuse
+name: BombDefuse
+version: 0.1
+description: Lets you attempt to defuse TNT bombs.
+author: augustt198
