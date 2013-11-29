@@ -23,10 +23,6 @@ public class AttemptManager {
         }
     }
 
-    public List<DefuseAttempt> getAttempts() {
-        return attempts;
-    }
-
     public DefuseAttempt getAttemptFromPlayer(Player player) {
         for(DefuseAttempt da : attempts) {
             if(da.getPlayer() == player) {

@@ -1,7 +1,6 @@
 package main.java.im.prox.bombdefuse;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.TNTPrimed;
 import org.bukkit.event.Listener;
@@ -9,7 +8,6 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.player.PlayerInteractEntityEvent;
-import org.bukkit.inventory.ItemStack;
 
 import java.util.List;
 
@@ -50,7 +48,7 @@ public class DefuseListener implements Listener{
             am.removeAttempt(da);
             da.close();
             player.sendMessage(ChatColor.GREEN + "Phew! TNT defused with only " + ChatColor.GOLD +
-                    da.getTNT().getFuseTicks()/20 + " seconds to go!");
+                    da.getTNT().getFuseTicks()/20 + ChatColor.GREEN + " seconds to go!");
             return;
         }
         event.setCancelled(true);

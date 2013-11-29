@@ -16,13 +16,11 @@ public class DefuseAttempt {
     private Player player;
     private Inventory inv;
     private TNTPrimed tnt;
-    private int ticksLeft;
     private int defuseSlot;
 
     public DefuseAttempt(Player player, TNTPrimed tnt) {
         this.player = player;
         this.tnt = tnt;
-        ticksLeft = tnt.getFuseTicks();
         String invName = "" + ChatColor.RED + ChatColor.BOLD + "Defuse attempt!";
         inv = Bukkit.getServer().createInventory(player, 36, invName);
         for(int i = 0; i < inv.getSize(); i++) {
